@@ -48,7 +48,7 @@ b) preaggregated data are aggregated using one (or both) of the two aggregation 
 
 Both steps can be executed sequentially in one run, but in such case concurrent processing benefits will be lost.
 
-### Source file processing and word counts data preaggragation.
+### Source file processing and word counts data preaggregation.
 
 Simplest call:
 
@@ -71,9 +71,9 @@ Database location, name and collection name or chunk size can be customized:
 java -jar challenge.jar -source dump.txt -mongo host:port -mongoDatabase mydb -mongoCollection mycol -chunk 1000
 ```
 
-### Concurrent source file processing and word counts data preaggragation.
+### Concurrent source file processing and word counts data preaggregation.
 
-In case of very large files users can process them concurrently. There are two ways possible.
+In case of very large files users can process them concurrently. There are two ways possible:
 
 #### Split the file into some parts.
 
